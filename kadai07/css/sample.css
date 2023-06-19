@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    width:100%;
+    font-family: 'Amatic SC', cursive;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Amatic SC', cursive;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    font-size: 70%;
+    font-family: 'Amatic SC', cursive;
+}
+main{
+    width:100%;
+    display: block;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:96%;
+    font-size: 80%;
+    margin: 0 3%;
+    text-align: center;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #fff;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    color:#0d7dfd;
+}
+li:hover{
+    background: #3e8be4;
+    color:#fff;
+}
+textarea{
+  margin: 10px 3%;
+  width: 95%;
+  height: 100px;
+  font-size:80%;
+  box-shadow: 3px 3px 3px 3px #555;
+  background-color:rgb(241, 239, 239);
+}
+#key{
+    margin:0 3%;
+    width: 95%;
+    font-size:80%;
+    background-color: #e1efff;
+    box-shadow: 3px 3px 3px 3px #555;
+}
+table{
+    margin: 20px 3%;
+    border:1px solid #8dc3f5;
+    width:96%;
+    
+}
+th{
+    width:30%;
+    font-size:20px;
+    background-color:#d0e7fc;
+    border-bottom: 1px solid #8dc3f5;
+}
+td{
+    font-size:16px;
+    background-color:rgb(241, 239, 239);
+    border-bottom: 1px solid #8dc3f5;
+}
+
+.h1-wrapper{
+    margin: auto;
+    padding: 10px;
+
+}
+
+.earth {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background-color: #95c5f2;
+    border-radius: 50%;
+    box-shadow: -20px 0 3px rgba(0, 0, 0, 0.3) inset;
+  }
+  
+  .earth:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-image: url(https://drive.google.com/uc?export=view&id=11chGBx0vAj79X4ph_fUXDQIYdRy9uqBV);
+    background-position: 0 0;
+    background-size: auto 100%;
+    transform: rotate(23.4deg);
+    animation: rotation 16s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  /* 画像のサイズを揃える */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex-basis: 100%;
+}
+
+.image-wrap{
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%;
+    margin: 10px 5px;
+}
+
+.image-wrap img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  /* twitter画像をホバーした */
+/* .img.user_btn:hover{
+   
+      /* 透明度を上げることで、画像の色を薄く見せる。*/
+      /* opacity:0.5;
+   
+      /* リンクをホバーしたときのカーソルにする。*/
+      /* cursor: pointer;
+  }; */
+   
+  /* twitter画像をクリックした瞬間 */
+  /* .img.user_btn:active{ */
+   
+      /* 要素を若干下に下げることで、押した感じを出す。*/
+   
+      /* 今いる位置から相対的に3px下に配置する。*/
+      /* position: relative;
+      top: 3px;
+  /* }; */ 
+
+    /*ボタン*/
+
+/* --------------------
+    contact
+*---------------------*/
+
+.form-wrapper{
+    width:640px ;
+    margin: auto;
+    padding: 10px;
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__text1{
+    margin: 60px;
+}
+
+.form__text2{
+    margin: 30px;
+}
+
+.form__text3{
+    margin: 75px;
+}
+
+.form-title{
+    width: 240px;
+    border: solid 2px;  /* 枠線指定 */
+    border-color: #bfbfbf;;
+    border-left-color:none ;
+    margin-left: 16px;
+    padding: 8px; 
+    text-align: left;     /* 余白指定 */
+    vertical-align:text-top
+
+}
+
+.form-item{
+    width: 400px;
+    border: solid 2px;  /* 枠線指定 */
+    border-color:#bfbfbf;
+    border-right-color: none;
+    padding: 8px;  
+    text-align: left;    /* 余白指定 */
+
+}
+
+.form__column{
+    width: 95%;
+    border: solid 1px; 
+    border-color: #bfbfbf;
+}
+
+.selectbox-003{
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+    }
+
+.submit-wrapper{
+    padding: 10px;
+}
+
+.form__label{
+    padding: 8px;
+}
+
+.input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+/* チェックボックスデザイン */
+.input[type="checkbox"] {
+    cursor: pointer;
+    padding-left: 80px;/*label手前にチェックボックス用の余白を開ける*/
+    vertical-align: middle;
+    position: relative;
+  }
+ 
+.input[type="checkbox"]::before,
+  input[type="checkbox"]::after {
+    content: "";
+    display: block; 
+    position: absolute;
+  }
+ 
+.input[type="checkbox"]::before {
+    background-color: #fff;
+    border-radius: 0%;
+    border: 1px solid #666464;
+    width: 20px;/*チェックボックスの横幅*/
+    height: 20px;/*チェックボックスの縦幅*/
+    transform: translateY(-50%);
+
+  }
+ 
+.input[type="checkbox"]::after {
+    border-bottom: 3px solid #666464;/*チェックの太さ*/
+    border-left: 3px solid #666464;/*チェックの太さ*/
+    opacity: 0;/*チェック前は非表示*/
+    height: 6px;/*チェックの高さ*/
+    width: 11px;/*チェックの横幅*/
+    transform: rotate(-45deg);
+  }
+ 
+.input[type="checkbox"]:checked::after {
+    opacity: 1;/*チェック後表示*/
+  }
+
+.map-wrapper{
+    margin: auto;
+  }
